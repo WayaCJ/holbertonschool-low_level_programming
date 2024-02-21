@@ -9,23 +9,23 @@ void jack_bauer(void)
 
 	for (t = 0; t <= 2; t++)
 	{
-		_putchar(t);
-	}
-		for (i = 0; i <= 9; i++)
+	for (i = 0; i <= 9; i++)
 		{
-			_putchar(i);
-		}
-			if ((t <= 1 && i <= 9) || (i <= 2 && i <= 3))
-			{
-				for (m = 0; m <= 5; m++)
+		if ((t <= 1 && i <= 9) || (t <= 2 && i <= 3))
+		{
+			for (m = 0; m <= 5; m++)
 				{
+			for (e = 0; e <= 9; e++)
+				{
+					_putchar(t + '0');
+					_putchar(i + '0');
 					_putchar(58);
-					_putchar(m);
+					_putchar(m + '0');
+					_putchar(e + '0');
+					_putchar('\n');
 				}
-					for (e = 0; e <= 9; e++)
-					{
-						_putchar(e);
-						_putchar('\n');
-					}
-			}
+				}
+		}
+		}
+	}
 }
