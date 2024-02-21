@@ -15,11 +15,11 @@ int main(void)
 		{
 		if (b < d)
 		{
-		putchar(b);
-		putchar(d);
-		if (b != '8' || (b == '8' && j != '9'))
-		putchar(',');
-		putchar(' ');
+			putchar(b);
+			putchar(d);
+			if (b != '8' || (b == '8' && j != '9'))
+			putchar(',');
+			putchar(' ');
 		}
 		}
 	}
