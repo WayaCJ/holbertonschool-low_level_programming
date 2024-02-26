@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *main- Entry point
- *
+ *reset_to_98- resets n to 98
+ *@n: pointer
  * Return: Nothing
  */
-void reset_to_9(int *n)
+void reset_to_98(int *n)
 {
-	int n;
-
-	n = 98;
-	modif_my_param(n);
+	*n = 98;
 }
