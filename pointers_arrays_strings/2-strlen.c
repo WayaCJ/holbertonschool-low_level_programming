@@ -5,12 +5,12 @@
  * Return: s
  */
 int _strlen(char *s)
-{	
-	int l;
+{
+	int len = 0;
 
-	while(*s++)
+	while (*s++)
 	{
-		l++;
+	len++;
 	}
-	return (l);
+	return (len);
 }
