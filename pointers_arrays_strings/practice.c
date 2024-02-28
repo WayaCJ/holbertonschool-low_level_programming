@@ -6,12 +6,15 @@
  */
 int main(void)
 {
-	int number = 14, v;
+	int number = 13, v;
+	int *n;
+
+	n = &number;
 
 	while (v != number)
 	{
-		printf("Try to guess the number from 1 to 20\n");
-		printf("What number do you think is the secret number?  " );
+		printf("Try to guess the number from 1 to 50\n");
+		printf("What number do you think is the secret number?  ");
 		scanf("%d", &v);
 
 		if (number > v)
@@ -21,7 +24,7 @@ int main(void)
 		else if (number == v)
 		{
 			printf("\n");
-			printf("We can't believe it, you got it right. Congrats!\n");
+			printf("We can't believe it, you got it right.\n The secret number was %d. Congrats!\n", *n);
 		}
 		else
 		{
