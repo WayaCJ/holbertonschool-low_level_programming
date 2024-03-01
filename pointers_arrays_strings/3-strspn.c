@@ -7,7 +7,7 @@
  */
 unsigned int _strspn(char *s, char *accept);
 {
-	unsigned int a = 0;
+	unsigned int n = 0;
 	int b;
 
 	while (*s)
@@ -16,13 +16,13 @@ unsigned int _strspn(char *s, char *accept);
 		{
 		if (*s == accept[b])
 		{
-			a++;
+			n++;
 				break;
 		}
 		else if (accept[b + 1] == '\0')
-			return (a);
+			return (n);
 		}
 		s++;
 	}
-	return (a);
+	return (n);
 }
