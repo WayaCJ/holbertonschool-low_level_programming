@@ -3,7 +3,7 @@
  *_strchr- Locates a char
  *@s: string
  *@c: char
- *Return: 0
+ *Return: NULL or s + a
  */
 char *_strchr(char *s, char c)
 {
