@@ -3,7 +3,7 @@
 /**
  *alloc_grid- pointer to a 2 dim. array
  *@width: width
- * @height: height
+ *@height: height
  *
  *Return: NULL on failure
  */
