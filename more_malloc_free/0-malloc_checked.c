@@ -3,6 +3,7 @@
 /**
  *malloc_checked- allocates
  *@b: size
+ *Return: termination 98 if NULL || p
  */
 void *malloc_checked(unsigned int b)
 {
