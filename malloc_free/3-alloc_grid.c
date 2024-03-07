@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 /**
  *alloc_grid- pointer to a 2 dim. array
  *@width: width
@@ -40,7 +39,7 @@ int **alloc_grid(int width, int height)
 	}
 	for (c = 0; c < height; c++)
 	{
-		for (d = 0, d < width; d++)
+		for (d = 0; d < width; d++)
 		{
 			a[c][d] = 0;
 		}
