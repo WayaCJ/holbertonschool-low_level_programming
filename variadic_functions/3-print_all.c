@@ -35,12 +35,12 @@ void print_all(const char * const format, ...)
 					if (!str)
 					{
 						str = "(nil)";
-						printf("%s%s", sepa, str);
 					}
+					printf("%s%s", sepa, str);
 					break;
 				default:
 					a++;
-				continue;
+					continue;
 			}
 			sepa = ", ";
 			a++;
