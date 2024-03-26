@@ -9,7 +9,9 @@ size_t print_list(const list_t *h)
 	size_t c;
 
 	if (h == NULL)
-		return (0);
+	{
+		printf("[0] (nil)");
+	}
 	for (c = 0; h != NULL; c++)
 	{
 		printf("%d\n", h->n);
