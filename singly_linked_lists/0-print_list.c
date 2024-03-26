@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 	}
 	for (c = 0; h != NULL; c++)
 	{
-		printf("%d\n", h->);
+		printf("%d\n", h->n);
 		h = h->next;
 	}
 	return (c);
