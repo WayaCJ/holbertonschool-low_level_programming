@@ -2,14 +2,17 @@
 #define _LISTS_H_
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 /**
- *struct listint_- structure
- *@n: int data
+ *struct list_s- structure
+ *@l: int data
+ *@str: str
  *@next: referencial pointer
  */
 typedef struct list_s
 {
-	int n;
+	unsigned int l;
+	char *str;
 	struct list_s *next;
 } list_t;
 
