@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_list- print data in singly linked list
  *@h: head pointer to the list
