@@ -1,11 +1,11 @@
-#ifndef _LISTS_H_
-#define _LISTS_H_
+#ifndef LISTS
+#define LISTS
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 /**
  *struct list_s- structure
- *@l: int data
+ *@len: int data
  *@str: str
  *@next: referencial pointer
  */
