@@ -1,33 +1,34 @@
 #include "lists.h"
 /**
- * add_nodeint- add node
+ * add_node- add node
  * @head: pointer
- * @n: new int
+ * @str: str
  * Return: pointer
  */
-listint_t *add_nodeint(listint_t **head, const int n)
+list_t *add_node(list_t **head, const char *str)
 {
-	listint_t *new_node;
+	list_t *new_node;
+	char *dup_str;
+	unsigned int str_len = 0;
 
-	if (head == NULL)
-	{
-		return (NULL);
-	}
-	new_node = malloc(sizeof(listint_t));
+	new_node = malloc(sizeof(list_t));
 	if (new_node == NULL)
+		return (NULL);
+
+	dup_str = strdup(str);
+	if (dup_str == NULL)
 	{
+		free(new_node);
 		return (NULL);
 	}
-	if (*head == NULL)
-	{
-		new_node->nxt = NULL;
-	}
-	else
-	{
-		new_node->nxt = *head;
-	}
-	new_node->n = n;
+	while (str[str_len])
+		str_len++;
+
+	new_node->str = dup_str;
+	new_node->len = str_len;
+	new_node->next = *head;
+
 	*head = new_node;
 
-	return (*head);
+	return (new_node);
 }
